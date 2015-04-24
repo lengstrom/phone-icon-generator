@@ -1,0 +1,37 @@
+{
+	"iPhone": { // => iconcatalog + raw images
+		"iPhone6+": {
+			"required": [180, 1024], // 1024 = for ios store
+			"optional": [120, 87, 66]
+		},
+		"iPhone6,iPhone5": {
+			"required": [120, 1024],
+			"optional": [80, 58, 44]
+		},
+		"iPhone4+": {
+			"required": [120, 1024],
+			"optional": [80, 58, 44]
+		}
+	},
+	"iPad": {
+		"iPad,iPadMini@2x": {
+			"required": [152, 1024],
+			"optional": [80, 58, 44]
+		},
+		"iPad2,iPadMini@1x": {
+			"required": [76, 1024],
+			"optional": [40, 29, 22]
+		}
+	},
+	"macos": { // => .icns
+		"osx": [16, 32, 128],
+		"5": [256, 512],
+		"7": [1024]
+	},
+	"android": {
+		"android": [48, 72, 96, 144, 192, 512] //512 = for android store
+	},
+	"bundles": {
+		"iOS": ["iPhone", "iPad"]
+	}
+}
